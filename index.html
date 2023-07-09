@@ -5,9 +5,202 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luhovyi Nazarii Front End Developer</title>
+  <link href="./assets/css/fonts.css" rel="stylesheet">
   <link href="./assets/css/style.css" rel="stylesheet">
+  <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
-  <h1>CV</h1>
+  <!-- Start Header  -->
+  <header class="header">
+    <div class="container_header">
+      <div class="header_cont__burger-btn">
+        <button class="header__burger-btn" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="cv"><span data-lang="header_cv">CV</span></div>
+      <div class="cont_right_block_header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#profile-navigation" class="nav-link" data-lang="menu_header_profile"></a></li>
+            <li class="nav-item"><a href="#summary-navigation" class="nav-link" data-lang="menu_header_about_me"></a></li>
+            <li class="nav-item"><a href="#skills-navigation" class="nav-link" data-lang="menu_header_skills"></a></li>
+            <li class="nav-item"><a href="#code-navigation" class="nav-link" data-lang="menu_header_code"></a></li>
+            <li class="nav-item"><a href="#education-navigation" class="nav-link" data-lang="menu_header_education"></a></li>
+            <li class="nav-item"><a href="#experience-navigation" class="nav-link" data-lang="menu_header_projects"></a></li>
+            <li class="nav-item"><a href="#languages-navigation" class="nav-link" data-lang="menu_header_languages"></a></li>
+            <li class="nav-item"><a href="#contacts-navigation" class="nav-link" data-lang="menu_header_contacts"></a></li>
+          </ul>
+        </nav>
+        <div class="wrap_select_lang">
+          <div class="container-lang-select">
+            <div class="container-lang-select-header">
+              <div class="flag flag_img" data-lang="home_lang-select-flag"></div>
+              <span class="container-lang-select-current" data-lang="home_lang-select"></span>
+            </div>
+            <div class="container-lang-select-body">
+              <div class="lang-btn-select" data-btn="de">
+                <div class="flag flag_de" data-btn="de"></div>
+                <span data-btn="de">DE</span>
+              </div>
+              <div class="lang-btn-select" data-btn="en">
+                <div class="flag flag_usa" data-btn="en"></div>
+                <span data-btn="en">EN</span>
+              </div>
+              <div class="lang-btn-select" data-btn="ru">
+                <div class="flag flag_ru" data-btn="ru"></div>
+                <span data-btn="ru">RU</span>
+              </div>
+              <div class="lang-btn-select" data-btn="ua">
+                <div class="flag flag_ua" data-btn="ua"></div>
+                <span data-btn="ua">UA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <main class="main">
+    <div class="margin-nav" id="profile-navigation"></div>
+    <!-- Start section Profile -->
+    <section class="section section-profile">
+      <div class="container">
+        <div class="block-profile">
+          <div class="avatar">
+            <img src="./assets/img/avatar.jpg" class="avatar-img" alt="my photo">
+          </div>
+          <div class="profile-text">
+            <h1 class="section-title" data-lang="home_h1_section-title"></h1>
+            <p data-lang="profession"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section Profile -->
+    <!-- Start section Summary -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="summary-navigation" data-lang="about_me"></h2>
+        <p data-lang="about_me_content">From 2007 to 2022, I was in charge of a mobile phone repair service center. Created and developed the website of his company <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> . Now I want to improve my skills in Front-End development, for general and my own projects.</p>
+      </div>
+    </section>
+    <!-- End section Summary -->
+    <!-- Start section Skills -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="skills-navigation" data-lang="skills"></h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS/SCSS/SASS</li>
+          <li>JavaScript</li>
+          <li>Gulp, WebPack</li>
+          <li>Git</li>
+          <li>WordPress</li>
+          <li>Photoshop</li>
+          <li>Figma</li>
+          <li>Microelectronics: soldering, circuitry, firmware nand, eprom</li>
+        </ul>
+      </div>
+    </section>
+    <!-- End section Skills -->
+    <!-- Start section Code -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="code-navigation" data-lang="example_code"></h2>
+        <div class="code">
+            <pre>
+              <code>
+    function paw(x, n) {
+      if (n == 1) {
+        return x;
+      } else {
+        return x * paw(x, n - 1);
+      }
+    }
+    
+    alert( paw(2, 3) ); // 8
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <!-- End section Code -->
+    <!-- Start section Education -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="education-navigation" data-lang="education"></h2>
+        <ul>
+          <li data-lang="university">
+          </li>
+          <li ><b data-lang="courses">Courses:</b>
+            <ul>
+              <li>
+                <a href="https://www.htmlacademy.ru" target="_blank">HTML Academy</a>
+              </li>
+              <li>
+                <a href="https://code-basics.com" target="_blank">Code Basics</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End section Education -->
+    <!-- Start section Experience -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="experience-navigation" data-lang="projects"></h2>
+        <p data-lang="projects_content"></p>
+      </div>
+    </section>
+    <!-- End section Experience -->
+    <!-- Start section Languages -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="languages-navigation" data-lang="languages">Languages</h2>
+        <ul>
+          <li data-lang="english"></li>
+          <li data-lang="german"></li>
+          <li data-lang="russian_ukrainian">Russian and Ukrainian: native speaker</li>
+        </ul>
+      </div>
+    </section>
+    <!-- End section Languages -->
+    <!-- Start section Contacts -->
+    <section class="section">
+      <div class="container border_section">
+        <h2 class="section-title" id="contacts-navigation" data-lang="contacts"></h2>
+        <ul>
+          <li data-lang="location"></li>
+          <li><b data-lang="phone"></b> +49 151 257-49-811</li>
+          <li><b>Email:</b> luhovyinazarii@gmail.com</li>
+          <li><b>GitHub:</b> <a href="https://github.com/Luhovyi-Nazarii" target="_blank">Luhovyi Nazarii</a></li>
+          <li><b>Discord:</b> Nazarii#4907</li>
+        </ul>
+      </div>
+    </section>
+    <!-- End section Contacts -->
+  </main>
+  <!-- Start footer -->
+  <footer class="footer">
+      <div class="section-footer">
+        <div class="footer-bl1">
+          <p>© 2022 - <span data-lang="this_year"></span> <span data-lang="by_luhovyi_nazarii"></span></p>
+        </div>
+        <div class="footer-bl2">
+          <a href="https://github.com/Luhovyi-Nazarii" target="_blank" class="logo-github">
+            <img src="./assets/img/favicon.png" alt="Logo Github">
+            <span> My GitHub</span> 
+          </a>
+        </div>
+        <div class="footer-bl3">
+          <a href="https://rs.school/js/"><img src="./assets/img/rs_school_js.svg" class="logo-rsschool" width="100" alt="RS School"></a>
+        </div>
+      </div>
+  </footer>
+  <!-- End footer -->
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
